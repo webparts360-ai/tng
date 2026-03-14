@@ -9,14 +9,19 @@
 body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f4f6fb;color:#1a1a1a}
 /* - header{background:#0f172a;color:white;padding:80px 20px;text-align:center} */
 header {
-    background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), 
-                url('https://fintechnews.my/wp-content/uploads/2023/07/touch-n-go-ewallet-users-can-now-send-remittance-to-10-countries.png');
-    background-size: contain;
+    background: url('https://fintechnews.my/wp-content/uploads/2023/07/touch-n-go-ewallet-users-can-now-send-remittance-to-10-countries.png');
+    background-size: contain; /* Shows the full image */
+    background-repeat: no-repeat; /* Prevents tiling */
     background-position: center;
+    background-color: #0f172a; /* Fills empty space with your original color */
+    
+    /* You may need to set a specific height to match the image aspect ratio */
+    min-height: 400px; 
+    
     color: white;
     padding: 80px 20px;
     text-align: center;
-}  
+}    
 header h1{font-size:44px;margin-bottom:10px}
 header p{max-width:760px;margin:auto;font-size:18px;opacity:.9}
 
@@ -172,7 +177,7 @@ footer{background:#0f172a;color:white;text-align:center;padding:30px;margin-top:
 </section>
 
 <footer>
-<p>Fintech Governance AI Transformation Framework</p>
+<p>Fintech Governance AI Transformation Framework prepared by Rico</p>
 </footer>
 
 <script>
